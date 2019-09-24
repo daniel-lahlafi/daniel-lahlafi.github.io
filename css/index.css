@@ -1,0 +1,60 @@
+img {
+    width: 100%;
+    border-radius: 75px;
+}
+
+
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em;
+}
+
+.cols-small {
+    width: 33%;
+}
+
+.cols-large {
+    width: 66%;
+}
+
+.cols-large p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.home-page-info {
+    text-align: center;
+    width: 100%;
+}
+
+.banner {
+    font-size: 3rem;
+}
+
+.accent {
+    color: #00A3FF;
+}
+
+#particles {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media (max-width: 620px) {
+    .columns {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    
+}
