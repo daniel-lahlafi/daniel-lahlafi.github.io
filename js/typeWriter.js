@@ -18,7 +18,6 @@ function typeWriter() {
         let progressBar = document.getElementById("inner-progress-bar");
         let width = (i / message.length) * 100;
 
-        console.log(width)
         progressBar.style.width = width + "%";
 
         setTimeout(function() {typeWriter(); }, speed);
