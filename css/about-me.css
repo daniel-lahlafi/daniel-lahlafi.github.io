@@ -1,7 +1,6 @@
 .about-me {
     background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     padding: 2em 0;
-    
 }
 
 .about-me img{
@@ -43,5 +42,21 @@
 .logo p {
     color: white;
     text-align: center;
-    text-decoration: underline;
+    font-size: 2rem;
+}
+
+#outer-progress-bar {
+    background-color: white; 
+    border-radius: 13px;
+    padding: 0px;
+    width: 33%;
+    margin: 2em auto;
+    visibility: hidden;
+}
+
+#inner-progress-bar {
+    background-image: linear-gradient(-141deg, #1fc8db 0%, #2cb5e8 0%);
+    width: 0%;
+    height: 10px;
+    border-radius: 10px;
 }
