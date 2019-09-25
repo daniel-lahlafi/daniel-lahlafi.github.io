@@ -3,8 +3,11 @@
     <head>
         <link href="css/header.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
+        <link href="css/about-me.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <script src="js/particles.js"></script>
+        <script src="js/typeWriter.js"></script>
         <script>
             particlesJS.load('particles', 'particles-config.json', function() {
                 console.log('callback - particles.js config loaded');
@@ -15,11 +18,11 @@
     <body>
         <div id="particles"></div>
         <header>
-            <h1>Daniel Lahlafi</h1>
+            <h1>Daniel <span class="accent">Lahlafi</span></h1>
             <ul>
                 <li><a class="button" href="#">Home</a></li>
-                <li><a class="button" href="#">About Me</a></li>
-                <li><a class="button" href="#">Projects</a></li>
+                <li><a class="button" onclick="typeWriter()" href="#">About Me</a></li>
+                <li><a class="button" href="https://github.com/daniel-lahlafi">Projects</a></li>
             </ul>
         </header>
         <main>
@@ -43,5 +46,54 @@
 
             <br>
         </main>
+
+        <div class="about-me">
+            <h2>Technologies I've learned</h2>
+            <div class="columns">
+                <div class="logo">
+                    <img
+                        src="img/java.svg"
+                        alt="java logo"
+                        width="50px"
+                        height="50px"
+                        style="width: 25%"
+                    >
+                    <p>Java</p>
+                </div>
+                <div class="logo">
+                    <img
+                        src="img/python.svg"
+                        alt="python logo"
+                        width="50px"
+                        height="50px"
+                        style="width: 25%"
+                    >
+                    <p>Python</p>
+                </div>
+                <div class="logo">
+                    <img
+                        src="img/react.svg"
+                        alt="react logo"
+                        width="50px"
+                        height="50px"
+                        style="width: 25%"
+                    >
+                    <p>React</p>
+                </div>
+                <div class="logo">
+                    <img
+                        src="img/haskell.svg"
+                        alt="haskell logo"
+                        width="50px"
+                        height="50px"
+                        style="width: 25%"
+                    >
+                    <p>Haskell</p>
+                </div>
+            </div>
+            <div id="find-out-more-btn" style="text-align: center"><a class="button" onclick="typeWriter()" >Press me to find out more!</a></div>
+            <p id="about-description"></p>
+            <div id="skip-btn" style="text-align: center"><a class="button" onclick="speedUp()" >Skip to the end</a></div>
+        </div>
     </body>
 </html>

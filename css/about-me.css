@@ -1,0 +1,47 @@
+.about-me {
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    padding: 2em 0;
+    
+}
+
+.about-me img{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: none;
+}
+
+.about-me h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+}
+
+
+.about-me #about-description {
+    font-size: 2rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about-me a {
+    display: inline-block;
+    align-content: center;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#skip-btn {
+    visibility: hidden;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo p {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}

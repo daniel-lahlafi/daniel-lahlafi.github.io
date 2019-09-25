@@ -1,6 +1,20 @@
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.about-me {
+    flex-shrink: 0;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, p {
@@ -28,17 +42,18 @@ ul {
 
 li {
     list-style: none;
-    padding: 1em;
+    padding-right: 2em;
 }
 
 .button {
     position: relative;
     text-decoration: none;
-    color: whitesmoke;
-    background: #00A3FF;
+    color: white;
+    background: #2cb5e8;
     padding: 1em 2em;
     border: 1px black solid;
     border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 .button:before {
@@ -58,14 +73,16 @@ li {
     transition: all 0.3s ease-in-out 0s;
 }
 
+.button:active {
+    background-image: linear-gradient(141deg, #9fb8ad 4%, #1fc8db 51%, #2cb5e8 75%);
+}
+
 .button:hover:before,
 .button:focus:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
-
 
 @media (max-width: 620px) {
     header {
@@ -89,3 +106,4 @@ li {
         margin: 2em 0;
     }
 }
+
