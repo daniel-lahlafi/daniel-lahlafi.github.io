@@ -4,8 +4,8 @@ var speed = 50;
 
 function typeWriter() {
     document.getElementById("find-out-more-btn").setAttribute("style", "display: none; text-align: center;")
-    document.getElementById("skip-btn").setAttribute("style", "visibility: visible; text-align: center;")
-    document.getElementById("outer-progress-bar").setAttribute("style", "visibility: visible")
+    document.getElementById("skip-btn").setAttribute("style", "display: block; text-align: center;")
+    document.getElementById("outer-progress-bar").setAttribute("style", "display: block")
 
     window.scrollTo({
         top:document.body.scrollHeight,

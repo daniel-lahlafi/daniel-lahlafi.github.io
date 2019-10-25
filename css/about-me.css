@@ -30,7 +30,7 @@
 }
 
 #skip-btn {
-    visibility: hidden;
+    display: none;
 }
 
 .logo {
@@ -51,7 +51,7 @@
     padding: 0px;
     width: 33%;
     margin: 2em auto;
-    visibility: hidden;
+    display: none;
 }
 
 #inner-progress-bar {
