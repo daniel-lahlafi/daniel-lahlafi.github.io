@@ -86,7 +86,8 @@ li {
 @media (max-width: 620px) {
     .button {
         display: block;
-        margin:0.4em auto;
+        margin: 0.4em auto;
+        width: 60%;
     }
 
     header {
